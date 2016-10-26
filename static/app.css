@@ -4,15 +4,10 @@
 
 #search {
   width: 80%;
+  margin-bottom: 40px;
 }
 
 button {
   float: right;
   width: 20%;
-}
-
-li {
-  list-style: none;
-  padding: 5px;
-  font-size: 18px;
 }

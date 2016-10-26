@@ -1,7 +1,8 @@
 function displaySongs(results) {
-  console.log(results)
+  console.log(results);
+
   for(var i=0; i < results['tracks']['items'].length; i++) {
-    $('#songs').append("<li><a href=" + results['tracks']['items'][i]['external_urls']['spotify'] + ">" + results['tracks']['items'][i]['name'] + '</a></li>');
+    $('#songs').append('<iframe src=https://embed.spotify.com/?uri=spotify:' + results['tracks']['items'][i]['external_urls']['spotify'] + ' width="300" height="380" frameborder="0" allowtransparency="true"></iframe>');
   }
 }
 
